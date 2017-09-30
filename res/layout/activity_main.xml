@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#000000"
+        android:gravity="center_horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_main">
+
+        <NumberPicker android:id="@+id/numberPicker1" style="@style/NumberPicker" />
+        <NumberPicker android:id="@+id/numberPicker2" style="@style/NumberPicker" />
+        <NumberPicker android:id="@+id/numberPicker3" style="@style/NumberPicker" />
+        <NumberPicker android:id="@+id/numberPicker4" style="@style/NumberPicker" />
+    </LinearLayout>
+
+    <include layout="@layout/logo" />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="235dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="OK"
+        android:onClick="okButtonClick" />
+
+    <include layout="@layout/list_view_all_lists" />
+
+</android.support.design.widget.CoordinatorLayout>

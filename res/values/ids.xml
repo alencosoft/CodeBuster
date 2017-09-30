@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Needed in AuthenticatorActivity to modify two list (row) components: Image and "skipping"
+     text. -->
+<resources>
+    <item name="authentication_row_image_id" type="id">0</item>
+    <item name="authentication_row_skipping_id" type="id">1</item>
+</resources>

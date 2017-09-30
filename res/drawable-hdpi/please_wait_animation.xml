@@ -1,0 +1,10 @@
+<!-- Animation frames are wheel0.png through wheel5.png
+     files inside the res/drawable/ folder -->
+<animation-list android:id="@+id/selected"
+    android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/please_wait_0" android:duration="150" />
+    <item android:drawable="@drawable/please_wait_1" android:duration="150" />
+    <item android:drawable="@drawable/please_wait_2" android:duration="150" />
+    <item android:drawable="@drawable/please_wait_3" android:duration="150" />
+</animation-list>
