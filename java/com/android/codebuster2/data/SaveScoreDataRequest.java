@@ -1,4 +1,4 @@
-package com.android.codebreaker.data;
+package com.android.codebuster2.data;
 
 /**
  * <p>A helper class that sets up the query that saves the user's score on the server.</p>
@@ -11,7 +11,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.util.Log;
 
-import com.android.codebreaker.R;
+import com.android.codebuster2.R;
 
 import java.net.URLEncoder;
 

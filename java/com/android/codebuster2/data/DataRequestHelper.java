@@ -1,4 +1,4 @@
-package com.android.codebreaker.data;
+package com.android.codebuster2.data;
 
 /**
  * <p>A base class that is used to handle the mundane properties/tasks associated with all server
@@ -25,7 +25,7 @@ import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.android.codebreaker.R;
+import com.android.codebuster2.R;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

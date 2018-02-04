@@ -1,8 +1,7 @@
-package com.android.codebreaker.data;
+package com.android.codebuster2.data;
 
 /**
- * <p>A helper class that sets up the query for the purpose of verifying a user ("accounts"
- * table).</p>
+ * <p>A helper class that sets up the query for high scores.</p>
  *
  * <p>Notice that the base class will take the listener from the activity. In that way, we'll
  * bypass this class completely when the query results come back.</p>
@@ -11,11 +10,9 @@ package com.android.codebreaker.data;
 import android.content.Context;
 import android.util.Log;
 
-import com.android.codebreaker.R;
+import com.android.codebuster2.R;
 
-import java.net.URLEncoder;
-
-public class VerifyCredentialsDataRequest extends DataRequestHelper
+public class GetHighScoresDataRequest extends DataRequestHelper
 {
     // Used in Logs
     private final String TAG = this.getClass().getSimpleName();
@@ -30,7 +27,7 @@ public class VerifyCredentialsDataRequest extends DataRequestHelper
      * @param listener - Needed to communicate with the calling class with the query results.
      * @param context - Needed to access resources (strings) to build the HTTP request url.
      */
-    public VerifyCredentialsDataRequest(IDataRequestCallback listener, Context context)
+    public GetHighScoresDataRequest(IDataRequestCallback listener, Context context)
     {
         Log.d(TAG, "Constructor");
 
@@ -44,41 +41,23 @@ public class VerifyCredentialsDataRequest extends DataRequestHelper
     /**
      * Builds and then executes the query. The final HTTP request is in the form of URL and query
      * string. The base class puts them together.
-     *
-     * @param userData - Contains the user's "Username" and "Password" needed to authenticate.
      */
-    public void execute(UserData userData)
+    public void execute()
     {
         Log.d(TAG, "execute()");
 
         try
         {
-            // We need the "Username" and "Password". So, if we don't have them there's no sense
-            // in trying to authenticate.
-            if (userData.getUsername().length() == 0 ||
-                    userData.getPassword().length() == 0)
-            {
-                Log.e(TAG, "execute(): ERROR: Username or Password were empty!");
-                return;
-            }
-
             // All links are stored in resources (strings).
             String link =
                     mContext.getResources().getString(R.string.url_header) +
-                            mContext.getResources().getString(R.string.url_tail_verify_credentials);
+                            mContext.getResources().getString(R.string.url_tail_get_high_scores);
 
-            Log.i(TAG, "execute(): link:" + link);
+            Log.d(TAG, "execute(): link:" + link);
 
-            // Setup the query string...
-            String queryString = URLEncoder.encode("username", "UTF-8") + "=" +
-                    URLEncoder.encode(userData.getUsername(), "UTF-8");
-            queryString += "&" + URLEncoder.encode("password", "UTF-8") + "=" +
-                    URLEncoder.encode(userData.getPassword(), "UTF-8");
-
-            Log.i(TAG, "execute(): queryString:" + queryString);
-
-            // Set the URL and Query String in the base class.
-            super.setParams(link, queryString);
+            // The base class takes two params to submit a request: URL and query string. In this
+            // case there isn't a query string needed (ie; no database params for filtering).
+            super.setParams(link, "");
 
             // Finally, call the AsyncTask "execute" method and wait for the response.
             super.execute("");

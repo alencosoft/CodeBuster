@@ -1,4 +1,4 @@
-package com.android.codebreaker.activities;
+package com.android.codebuster2.activities;
 
 /**
  * <p>[Birds Eye View]</p>
@@ -81,14 +81,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.codebreaker.R;
-import com.android.codebreaker.auth.Authenticator;
-import com.android.codebreaker.auth.AuthenticatorLoginDialogFragment;
-import com.android.codebreaker.data.IDataRequestCallback;
-import com.android.codebreaker.data.SaveScoreDataRequest;
-import com.android.codebreaker.data.UserData;
-import com.android.codebreaker.data.VerifyCredentialsDataRequest;
-import com.android.codebreaker.misc.Utilities;
+import com.android.codebuster2.R;
+import com.android.codebuster2.auth.Authenticator;
+import com.android.codebuster2.auth.AuthenticatorLoginDialogFragment;
+import com.android.codebuster2.data.IDataRequestCallback;
+import com.android.codebuster2.data.SaveScoreDataRequest;
+import com.android.codebuster2.data.UserData;
+import com.android.codebuster2.data.VerifyCredentialsDataRequest;
+import com.android.codebuster2.misc.Utilities;
 
 import org.json.JSONException;
 import org.json.JSONObject;

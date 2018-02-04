@@ -62,7 +62,7 @@
 
     <!-- Url strings -->
     <!-- <string name="url_header">http://api.greggscoolapps.com/</string> -->
-    <string name="url_header">http://192.168.1.150/webservice/</string>
+    <string name="url_header">http://api.greggscoolapps.com/</string>
     <string name="url_tail_splash">codebuster_miscdata.php</string>
     <string name="url_tail_verify_credentials">verify_credentials.php</string>
     <string name="url_tail_submit_scores">codebuster_submitscores.php</string>

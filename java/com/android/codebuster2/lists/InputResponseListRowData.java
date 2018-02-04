@@ -1,4 +1,4 @@
-package com.android.codebreaker.lists;
+package com.android.codebuster2.lists;
 
 /**
  * <p>A Parcelable data class to store each list "row's" data. This data object will then be used

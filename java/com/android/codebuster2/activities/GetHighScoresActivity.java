@@ -1,4 +1,4 @@
-package com.android.codebreaker.activities;
+package com.android.codebuster2.activities;
 
 /**
  * <p>As the class name implies, this class shows all of the high scores for all users. The scores
@@ -15,13 +15,13 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.android.codebreaker.data.GetHighScoresDataRequest;
-import com.android.codebreaker.data.IDataRequestCallback;
-import com.android.codebreaker.data.UserData;
-import com.android.codebreaker.lists.GetScoresListAdapter;
-import com.android.codebreaker.lists.GetScoresListRowData;
-import com.android.codebreaker.R;
-import com.android.codebreaker.misc.Utilities;
+import com.android.codebuster2.data.GetHighScoresDataRequest;
+import com.android.codebuster2.data.IDataRequestCallback;
+import com.android.codebuster2.data.UserData;
+import com.android.codebuster2.lists.GetScoresListAdapter;
+import com.android.codebuster2.lists.GetScoresListRowData;
+import com.android.codebuster2.R;
+import com.android.codebuster2.misc.Utilities;
 
 import org.json.JSONArray;
 import org.json.JSONException;

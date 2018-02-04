@@ -1,4 +1,4 @@
-package com.android.codebreaker.lists;
+package com.android.codebuster2.lists;
 
 /**
  * <p>The meld between the list components in each row and their data. (eg; The "glue" that binds
@@ -19,7 +19,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.codebreaker.R;
+import com.android.codebuster2.R;
 
 import java.util.List;
 

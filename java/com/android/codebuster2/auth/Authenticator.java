@@ -1,4 +1,4 @@
-package com.android.codebreaker.auth;
+package com.android.codebuster2.auth;
 
 /**
  * <p>So, why even worry about setting all of this info in the device's AccountManager? Glad you
@@ -23,7 +23,7 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.codebreaker.R;
+import com.android.codebuster2.R;
 
 public class Authenticator
 {

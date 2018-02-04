@@ -1,4 +1,4 @@
-package com.android.codebreaker.data;
+package com.android.codebuster2.data;
 
 /**
  * <p>This is the generic (all purpose) interface used by all "...DataRequest" classes. These

@@ -1,4 +1,4 @@
-package com.android.codebreaker.activities;
+package com.android.codebuster2.activities;
 
 /**
  * <p>"Splash Screen": The first screen presented to the user. Only one interesting piece here: If
@@ -24,10 +24,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.android.codebreaker.R;
-import com.android.codebreaker.data.IDataRequestCallback;
-import com.android.codebreaker.data.SplashDataRequest;
-import com.android.codebreaker.misc.Utilities;
+import com.android.codebuster2.R;
+import com.android.codebuster2.data.IDataRequestCallback;
+import com.android.codebuster2.data.SplashDataRequest;
+import com.android.codebuster2.misc.Utilities;
 
 import org.json.JSONArray;
 import org.json.JSONException;

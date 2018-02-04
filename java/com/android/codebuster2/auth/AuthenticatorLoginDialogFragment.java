@@ -1,4 +1,4 @@
-package com.android.codebreaker.auth;
+package com.android.codebuster2.auth;
 
 /**
  * <p>This is the "Login/Create Account" dialogue window. Minus the UI components, the bulk of
@@ -34,7 +34,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.android.codebreaker.R;
+import com.android.codebuster2.R;
 
 import java.util.regex.Pattern;
 

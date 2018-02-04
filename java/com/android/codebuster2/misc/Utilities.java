@@ -1,4 +1,4 @@
-package com.android.codebreaker.misc;
+package com.android.codebuster2.misc;
 
 /**
  * A few static Utility methods that make Unit Testing easier and don't clog activity code.
@@ -10,7 +10,7 @@ import android.net.NetworkInfo;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.android.codebreaker.R;
+import com.android.codebuster2.R;
 
 public class Utilities
 {

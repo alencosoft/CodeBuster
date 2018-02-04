@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.codebreaker"
-    android:name="com.android.codebreaker">
+    package="com.android.codebuster2"
+    android:name="com.android.codebuster2">
+
+    <!-- The latest version: -->
+    android:versionCode="3"
+    android:versionName="2.0"
 
     <!-- There are specific reasons we need to "min" the SDK to level 22. Mostly due to
           authentication. (See /auth/Authenticator.removeAccount) According to Google's release

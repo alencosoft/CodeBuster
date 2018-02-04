@@ -1,4 +1,4 @@
-package com.android.codebreaker.activities;
+package com.android.codebuster2.activities;
 
 /**
  * <p>This is the actual game or main activity. In order to understand the code you should probably
@@ -31,11 +31,11 @@ import android.view.Window;
 import android.widget.ListView;
 import android.widget.NumberPicker;
 
-import com.android.codebreaker.data.UserData;
-import com.android.codebreaker.lists.InputResponseListAdapter;
-import com.android.codebreaker.lists.InputResponseListRowData;
-import com.android.codebreaker.R;
-import com.android.codebreaker.misc.Utilities;
+import com.android.codebuster2.data.UserData;
+import com.android.codebuster2.lists.InputResponseListAdapter;
+import com.android.codebuster2.lists.InputResponseListRowData;
+import com.android.codebuster2.R;
+import com.android.codebuster2.misc.Utilities;
 
 import java.util.ArrayList;
 import java.util.Collection;

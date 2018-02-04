@@ -1,4 +1,4 @@
-package com.android.codebreaker.data;
+package com.android.codebuster2.data;
 
 /**
  * A data class used by several Activities and Database interactions. I like
@@ -13,7 +13,7 @@ package com.android.codebreaker.data;
  *     2) Unit Testing: It is easy to mock this class making unit testing a snap.
  */
 
-import com.android.codebreaker.misc.Utilities;
+import com.android.codebuster2.misc.Utilities;
 
 import java.io.Serializable;
 
